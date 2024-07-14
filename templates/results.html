@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contract Validation Results</title>
+    <style>
+        .highlight-red {
+            background-color: #ffcccc;
+            font-weight: bold;
+        }
+        .highlight-green {
+            background-color: #ccffcc;
+            font-weight: bold;
+        }
+        .highlight-blue {
+            background-color: #cce5ff;
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contract Validation Results</h1>
+    
+    <h2>Deviations of Original Contract from Template:</h2>
+    <pre>{{ important_contents|safe }}</pre>
+
+    <h2>Highlighted Contract:</h2>
+    <pre>{{ highlighted_contract|safe }}</pre>
+
+    <h2>Entities Detected:</h2>
+    <table>
+        <tr>
+            <th>Entity</th>
+            <th>Label</th>
+        </tr>
+        {% for entity, label in entities %}
+        <tr>
+            <td>{{ entity }}</td>
+            <td>{{ label }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
