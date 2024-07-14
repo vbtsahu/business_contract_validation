@@ -1,4 +1,8 @@
 # business_contract_validation
+
+We can run the project with the commands mentioned here and test with the pdf files given in uploads folder
+
+
 python -m venv venv
 
 venv\Scripts\activate
