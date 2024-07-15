@@ -3,14 +3,10 @@
 We can run the project with the commands mentioned here and test with the pdf files given in uploads folder.
 
 organize the files like this
-business_contract_validation/
-|
-|--templates/
-|  |--results.html
-|  |--upload.html
-|
-|--app.py
-|--requirements.txt
+business_contract_validation/templates/results.html
+business_contract_validation/templates/upload.html
+business_contract_validation/app.py
+business_contract_validation/requirements.txt
 
 
 python -m venv venv
