@@ -1,7 +1,17 @@
 # business_contract_validation
 
-We can run the project with the commands mentioned here and test with the pdf files given in uploads folder
+We can run the project with the commands mentioned here and test with the pdf files given in uploads folder.
 
+organize the files like this
+business_contract_validation/
+|
+|--templates/
+|  |--results.html
+|  |--upload.html
+|
+|--app.py
+|--requirements.txt
+------------------------------
 
 python -m venv venv
 
