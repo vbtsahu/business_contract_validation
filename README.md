@@ -11,7 +11,7 @@ business_contract_validation/
 |
 |--app.py
 |--requirements.txt
-------------------------------
+
 
 python -m venv venv
 
